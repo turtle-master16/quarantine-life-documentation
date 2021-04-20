@@ -1,34 +1,74 @@
-Mon Apr 19 15:57:42 2021
+Wed Apr 21 01:41:21 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
  
 
-Bootstrap to the start of init.init took 0.22s
-Early init took 0.01s
-Loader init took 0.05s
-Loading error handling took 0.05s
-Loading script took 0.33s
-Loading save slot metadata. took 0.06s
-Loading persistent took 0.00s
+Bootstrap to the start of init.init took 0.33s
+Early init took 0.43s
+Loader init took 0.11s
+Loading error handling took 0.81s
+Loading script took 8.56s
+Loading save slot metadata. took 0.11s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.18s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.02s
+ - Init at renpy/common/00updater.rpy:23 took 0.95926 s.
+ - Init at game/gui.rpy:11 took 1.81501 s.
+ - Init at renpy/common/00library.rpy:376 took 0.26662 s.
+Running init code took 3.12s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Dump and make backups. took 0.23s
+Dump and make backups. took 0.36s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.07s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.31s
 Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.01s
-Load screen analysis took 0.04s
+Init translation took 0.13s
+Build styles took 0.02s
+Load screen analysis took 0.19s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.46s
+Prepare screens took 0.19s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 1.73s
+
+Initializing gl renderer:
+primary display bounds: (0, 0, 1440, 900)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'AMD Radeon HD 8370D'
+Version: '4.5.13399 Compatibility Profile Context 15.201.1151.1008'
+Display Info: None
+Number of texture units: 18
+Using shader environment.
+Using FBO RTT.
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Using gl renderer.
+Texture testing:
+- Hardware max texture size: 16384
+- 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+Screen sizes: virtual=(1280, 720) physical=(1280, 720) drawable=(1280, 720)
+Root FBO is: 0
+FBO Maximum Texture Size: 2048
+Total time until interface ready: 25.1162340641s
+Cleaning stores took 0.63s
+Init translation took 1.60s
+Build styles took 0.75s
+Load screen analysis took 1.79s
+Analyze screens took 0.00s
+Prepare screens took 0.05s
+Running _start took 0.16s
