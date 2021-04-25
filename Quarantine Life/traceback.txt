@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 300, in script
+    centered "{color="#f00"}{b}Bad End: Quarantine Violator{/b}{/color}"
+Exception: Open text tag at end of string u'{color='.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 300, in script
+    centered "{color="#f00"}{b}Bad End: Quarantine Violator{/b}{/color}"
+  File "renpy/ast.py", line 715, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1393, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1205, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 871, in do_display
+    **display_args)
+  File "renpy/character.py", line 602, in display_say
+    what_text.update()
+  File "renpy/text/text.py", line 1731, in update
+    tokens = self.tokenize(text)
+  File "renpy/text/text.py", line 2205, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "textsupport.pyx", line 127, in renpy.text.textsupport.tokenize
+Exception: Open text tag at end of string u'{color='.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.4.1439
+Quarantine Life 1.0
+Sun Apr 25 20:56:46 2021
